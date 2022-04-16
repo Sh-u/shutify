@@ -63,7 +63,7 @@ const Player = () => {
           console.log("now playing", data.item);
           if (data.item !== null){
             setCurrentSongId(data.item.id);
-            console.log('current song id: ', currentSongId);
+   
           }
 
           spotifyApi.player.getPlaybackInfo().then((data) => {

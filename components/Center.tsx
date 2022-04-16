@@ -59,7 +59,7 @@ import MySession from '../lib/MySession';
       }
      
       if (playlist){
-        console.log(playlist)
+
       }
     }, [session, playlistID])
 
