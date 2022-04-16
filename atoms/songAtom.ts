@@ -1,7 +1,7 @@
 import { atom } from "recoil";
 
 
-export const currentSongIdState = atom({
+export const currentSongIdState = atom<string>({
     key: 'currentSongIdState',
     default: ''
 })

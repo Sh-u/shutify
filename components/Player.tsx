@@ -14,7 +14,7 @@ const Player = () => {
     const spotifyApi = useSpotify();
     const songInfo = useSongInfo();
 
-    const [currentSongId, setCurrentSongId] = useRecoilState<string | undefined>(currentSongIdState)
+    const [currentSongId, setCurrentSongId] = useRecoilState<string>(currentSongIdState)
     const [isPlaying, setIsPlaying] = useRecoilState<boolean>(isPlayingState);
     const [volume, setVolume] = useState<number>(50);
 

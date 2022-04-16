@@ -19,7 +19,7 @@ const Song = ({item, order} : {item: PlaylistItem, order: number}) => {
     const session = _data as MySession;
     
     const [isHovered, setIsHovered] = useState(false);
-    const [currentSongId, setCurrentSongId] = useRecoilState<string | undefined>(currentSongIdState);
+    const [currentSongId, setCurrentSongId] = useRecoilState<string>(currentSongIdState);
 
     const [isPlaying, setIsPlaying] = useRecoilState<boolean>(isPlayingState);
 
