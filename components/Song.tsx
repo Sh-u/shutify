@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { RecoilState, useRecoilState } from 'recoil';
+import {  useRecoilState } from 'recoil';
 import { PlaylistItem, SimplifiedAlbum, SimplifiedArtist} from 'spotify-web-api-ts/types/types/SpotifyObjects';
 import { currentSongIdState, isPlayingState } from '../atoms/songAtom';
 import useSpotify from '../hooks/useSpotify'

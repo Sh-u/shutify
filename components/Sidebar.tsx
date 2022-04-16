@@ -10,7 +10,7 @@ import {
   LogoutIcon
 
 } from "@heroicons/react/solid";
-import { signOut, signIn, useSession } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
 import useSpotify from '../hooks/useSpotify'
 import { SimplifiedPlaylist } from 'spotify-web-api-ts/types/types/SpotifyObjects';
 import { useRecoilState } from 'recoil';

@@ -1,9 +1,8 @@
 import { FastForwardIcon, PauseIcon, PlayIcon, ReplyIcon, RewindIcon, SwitchHorizontalIcon, VolumeOffIcon, VolumeUpIcon } from '@heroicons/react/solid';
 import { useSession } from 'next-auth/react';
-import { type } from 'os';
 import debounce from 'lodash.debounce';
 import React, { useCallback, useEffect, useState } from 'react'
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState} from 'recoil';
 import { currentSongIdState, isPlayingState } from '../atoms/songAtom';
 import useSongInfo from '../hooks/useSongInfo';
 import useSpotify from '../hooks/useSpotify'
