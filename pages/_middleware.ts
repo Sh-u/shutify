@@ -12,7 +12,6 @@ import { NextFetchEvent, NextRequest, NextResponse } from "next/server"
     
     if (!token){
         console.log('no token');
-        return NextResponse.error();
     }
 
 
