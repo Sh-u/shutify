@@ -110,7 +110,7 @@ const Player = () => {
       <div className='flex items-center justify-center space-x-2 md:space-x-5'>
         <SwitchHorizontalIcon className='button'/>
         <RewindIcon className='button' onClick={handlePrevSong}/>
-        {isPlaying ? <PlayIcon onClick={handlePlayPause} className='button w-10 h-10'/> : <PauseIcon onClick={handlePlayPause} className='button w-10 h-10' />}
+        {isPlaying ? <PauseIcon onClick={handlePlayPause} className='button w-10 h-10'/> : <PlayIcon onClick={handlePlayPause} className='button w-10 h-10' />}
         <FastForwardIcon className='button' onClick={handleNextSong}/>
         <ReplyIcon className="button"/>
       </div>
