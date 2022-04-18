@@ -28,9 +28,7 @@ import { NextFetchEvent, NextRequest, NextResponse } from "next/server"
     if (!token && pathname !== `/login`){
         
         console.log('redirect to login page')
-        const url = req.nextUrl.clone()
-        url.pathname = '/login'
-        return NextResponse.rewrite(url)
+        return NextResponse.redirect(`${origin}/login`)
     }
 
 
