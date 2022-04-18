@@ -54,6 +54,7 @@ export default NextAuth({
     async jwt({token, account, user}){
       if (account && user){
         
+        console.log('token is -> ',token)
         return {
           ...token,
           accessToken: account.access_token,
