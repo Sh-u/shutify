@@ -8,7 +8,7 @@ import { NextFetchEvent, NextRequest, NextResponse } from "next/server"
 
     
 
-    const token = await getToken({ req, secret: process.env.JWT_SECRET || 'middleware: wrong secret'});
+    const token = await getToken({ req, secret: process.env.JWT_SECRET || 'middleware: wrong secret',  secureCookie: process.env.NEXTAUTH_URL?.startsWith("https://") ?? !!process.env.VERCEL_URL });
 
     const {pathname, origin} = req.nextUrl;
   
